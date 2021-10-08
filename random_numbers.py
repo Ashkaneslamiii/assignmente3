@@ -3,8 +3,12 @@ import random
 n = int(input("How many numbers do you want? "))
 numbers = []
 
-for i in range(n):
-    numbers.append(random.randint(0,100))
+
+while len(numbers) < n:
+    
+    x = random.randint(0,100)
+    if x not in numbers:
+        numbers.append(x)
 
 print(numbers)
 
