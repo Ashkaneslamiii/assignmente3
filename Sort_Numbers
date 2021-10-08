@@ -1,0 +1,13 @@
+numbers = []
+
+n = int(input("How many numbers you want?"))
+
+for i in range(n):
+    x = int(input("Insert Number\n"))
+    numbers.append(x)
+
+for i in range(1,n):
+    if numbers[i] < numbers[i-1]:
+        print("IS NOT SORT")
+        exit()
+print("IS SORT")
